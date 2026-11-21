@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход — Школьный архив</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .login-card {
+            max-width: 420px;
+            margin: 70px auto;
+            padding: 35px;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px #00000012;
+            text-align: left;
+        }
+
+        .login-card h1 {
+            text-align: center;
+        }
+
+        .login-card p {
+            text-align: center;
+        }
+
+        .login-card label {
+            display: block;
+            margin-top: 20px;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .login-card input {
+            width: 100%;
+            padding: 13px;
+            border: 1px solid #ccd5e1;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        .login-card button {
+            width: 100%;
+            margin-top: 25px;
+        }
+
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            color: #2459a9;
+            text-decoration: none;
+        }
+        body {
+    background: linear-gradient(135deg, #eef5ef, #f8f3e9);
+    min-height: 100vh;
+}
+
+.login-card {
+    max-width: 430px;
+    margin: 80px auto;
+    padding: 40px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+}
+
+.login-card h1 {
+    color: #216342;
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.login-card p {
+    color: #66736b;
+}
+
+.login-card input {
+    box-sizing: border-box;
+    padding: 14px;
+    border: 1px solid #d8e3da;
+    border-radius: 10px;
+    outline: none;
+    transition: 0.2s;
+}
+
+.login-card input:focus {
+    border-color: #287447;
+    box-shadow: 0 0 0 3px rgba(40, 116, 71, 0.12);
+}
+
+.login-card button {
+    padding: 14px;
+    background: #287447;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login-card button:hover {
+    background: #1d5c37;
+}header {
+    background: #287447;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+header h1,
+header p {
+    color: white;
+}
+
+    </style>
+
+<link rel="icon" type="image/jpeg" href="images/logo.jpg">
+
+</head>
+
+<body>
+
+    <header class="student-header"></header>
+        <h2>Школьный архив</h2>
+        <p style="color:white;">Олимпиады · Достижения · Грамоты</p>
+    </header>
+
+    <main class="login-card">
+
+<img src="images/logo.jpg" alt="Логотип гимназии" class="login-logo">
+
+        <h1>Вход в аккаунт</h1>
+
+        <p>Войдите, чтобы посмотреть свои грамоты</p>
+
+        <form>
+            <label for="email">Электронная почта</label>
+            <input
+                type="email"
+                id="email"
+                placeholder="Введите свою почту"
+                required
+            >
+
+            <label for="password">Пароль</label>
+            <input
+                type="password"
+                id="password"
+                placeholder="Введите пароль"
+                required
+            >
+
+            <button type="submit">Войти</button>
+        </form>
+
+        <a href="index.html" class="back-link">
+            Вернуться на главную
+        </a>
+
+    </main>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/supabase.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>

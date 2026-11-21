@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кабинет учителя</title>
+    <link rel="stylesheet" href="css/style.css">
+
+<link rel="icon" type="image/jpeg" href="images/logo.jpg">
+
+</head>
+<body>
+
+    
+<header class="site-header">
+    <div class="header-content">
+        <img src="images/logo.jpg" alt="Логотип гимназии" class="school-logo">
+
+        <div class="school-name">
+            <h1>Гимназия №26</h1>
+            <p>Кабинет учителя</p>
+        </div>
+    </div>
+</header>
+
+<nav class="main-nav">
+    <a href="index.html">Главная</a>
+    <a href="teacher.html">Кабинет учителя</a>
+</nav>
+
+
+    <main>
+        <h2>Добро пожаловать!</h2>
+        <p>Здесь учитель сможет добавлять грамоты и сертификаты учеников.</p>
+
+        <section>
+            <h3>Добавить грамоту</h3>
+            <form id="certificate-form">
+    <label>ФИО ученика:</label>
+    <input type="text" placeholder="Введите ФИО">
+
+    <label>Предмет:</label>
+    <input type="text" placeholder="Например, история">
+
+    <label>Название олимпиады:</label>
+    <input type="text" placeholder="Введите название">
+
+    <label>Год:</label>
+    <input type="number" placeholder="Например, 2026">
+
+    <label>Документ PDF:</label>
+    <input type="file" accept=".pdf">
+
+    <button type="submit">Добавить грамоту</button>
+</form>
+        </section>
+
+        <a href="index.html">Вернуться на главную</a>
+        <p><a href="#" id="logout-button">Выйти из аккаунта</a></p>
+    </main>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/supabase.js"></script>
+<script src="js/teacher-auth.js"></script>
+<script src="js/teacher.js"></script>
+</body>
+</html>

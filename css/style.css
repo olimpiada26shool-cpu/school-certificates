@@ -1,0 +1,367 @@
+
+/* Основные настройки сайта */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3f6fb;
+    color: #1d2d45;
+}
+
+/* Верхняя часть сайта */
+header {
+    background: #17365d;
+    color: white;
+    padding: 24px;
+    text-align: center;
+}
+
+/* Основной блок */
+main {
+    max-width: 700px;
+    margin: 60px auto;
+    padding: 30px;
+    text-align: center;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px #00000010;
+}
+
+/* Заголовки */
+h1 {
+    margin-top: 0;
+}
+
+/* Текст */
+p {
+    line-height: 1.7;
+    color: #53657d;
+}
+
+/* Кнопки */
+button {
+    background: #2459a9;
+    color: white;
+    border: none;
+    padding: 14px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #17365d;
+}
+
+/* Нижняя часть сайта */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #65748a;
+}
+.certificate-card {
+    background: white;
+    border: 1px solid #dce3ed;
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 15px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.certificate-card h4 {
+    color: #2456a6;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.certificate-card p {
+    color: #444;
+    margin: 7px 0;
+}
+
+/* Шапка сайта */
+.site-header {
+    background: white;
+    padding: 18px 40px;
+    border-bottom: 3px solid #e9f0e9;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.school-logo {
+    width: 85px;
+    height: 85px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.school-name h1 {
+    color: #245b3b;
+    font-size: 27px;
+    margin: 0;
+}
+
+.school-name p {
+    color: #777;
+    font-size: 14px;
+    margin: 6px 0 0;
+}
+
+/* Приветственный экран */
+.hero {
+    max-width: 1100px;
+    margin: 55px auto;
+    padding: 75px 40px;
+    background: linear-gradient(135deg, #e9f5ec, #fff7ed);
+    border-radius: 24px;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(30, 80, 50, 0.08);
+}
+
+.hero-content {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.hero-label {
+    display: inline-block;
+    color: #b86a24;
+    background: #fff0dc;
+    padding: 9px 18px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.hero h2 {
+    color: #245b3b;
+    font-size: 38px;
+    margin: 25px 0 18px;
+}
+
+.hero p {
+    color: #59665c;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.main-button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 15px 30px;
+    background: #287447;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.main-button:hover {
+    background: #b86a24;
+    transform: translateY(-3px);
+}
+
+/* Навигационное меню */
+.main-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 18px;
+    background: #245b3b;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.main-nav a:hover {
+    color: #f5b66a;
+    transform: translateY(-2px);
+}
+
+/* Адаптация для телефонов */
+@media (max-width: 600px) {
+    .site-header {
+        padding: 15px;
+    }
+
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .school-logo {
+        width: 75px;
+        height: 75px;
+    }
+
+    .school-name h1 {
+        font-size: 23px;
+    }
+
+    .main-nav {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .hero {
+        margin: 25px 15px;
+        padding: 40px 20px;
+    }
+
+    .hero h2 {
+        font-size: 27px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+}
+.student-header {
+    background: #287447;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.student-header h1,
+.student-header p {
+    color: white;
+}
+
+/* Фильтры поиска грамот */
+.student-header + main select {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: 1px solid #d3e2d7;
+    border-radius: 10px;
+    background: #f8fbf8;
+    color: #245b3b;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.student-header + main select:focus {
+    outline: none;
+    border-color: #287447;
+    box-shadow: 0 0 0 3px #e1efe5;
+}
+
+.student-header + main label {
+    display: block;
+    font-weight: 600;
+    color: #245b3b;
+}
+
+.student-header + main h2,
+.student-header + main h3 {
+    color: #245b3b;
+}
+
+/* Карточки грамот */
+.certificate-card {
+    background: #ffffff;
+    border: 1px solid #dce8df;
+    border-left: 5px solid #287447;
+    border-radius: 14px;
+    padding: 25px;
+    margin-top: 20px;
+    text-align: left;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
+}
+
+.certificate-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(40, 116, 71, 0.12);
+}
+
+.certificate-card h4 {
+    color: #245b3b;
+    font-size: 22px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.certificate-card p {
+    color: #59665c;
+    font-size: 15px;
+    margin: 8px 0;
+}
+
+/* Форма кабинета учителя */
+#certificate-form {
+    max-width: 550px;
+    margin: 25px auto;
+    text-align: left;
+}
+
+#certificate-form label {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    color: #245b3b;
+    font-weight: bold;
+}
+
+#certificate-form input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px;
+    border: 1px solid #d3e2d7;
+    border-radius: 10px;
+    background: #f8fbf8;
+    font-size: 15px;
+}
+
+#certificate-form input:focus {
+    outline: none;
+    border-color: #287447;
+    box-shadow: 0 0 0 3px #e1efe5;
+}
+
+#certificate-form button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 15px;
+    background: #287447;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#certificate-form button:hover {
+    background: #1d5c37;
+}
+
+.login-logo {
+    display: block;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет — Школьный архив</title>
+    <link rel="stylesheet" href="css/style.css">
+
+<link rel="icon" type="image/jpeg" href="images/logo.jpg">
+
+</head>
+<body>
+
+    
+<header class="student-header">
+    <img src="images/logo.jpg" alt="Логотип гимназии" class="login-logo">
+    <h1>Гимназия №26</h1>
+    <p>Личный кабинет ученика</p>
+</header>
+
+
+    <main>
+        <h2>Личный кабинет ученика</h2>
+        <p>Добро пожаловать!</p>
+
+        <section>
+            <h3>Мои грамоты</h3>
+            <p>Здесь будут отображаться твои достижения и сертификаты.</p>
+        </section>
+
+        <section>
+            <h3>Поиск грамот</h3>
+            <label for="olympiad">Олимпиада или конкурс:</label>
+
+<select id="olympiad">
+    <option>Все олимпиады</option>
+    <option>Дарын</option>
+    <option>Городская олимпиада</option>
+    <option>Областная олимпиада</option>
+    <option>Республиканская олимпиада</option>
+    <option>Школьная олимпиада</option>
+    <option>Другое</option>
+</select>
+
+<br><br>
+
+<label for="subject">Предмет:</label>
+<select id="subject">
+    <option>Все предметы</option>
+    <option>Алгебра</option>
+    <option>Геометрия</option>
+    <option>Математика</option>
+    <option>Русский язык</option>
+    <option>Казахский язык</option>
+    <option>Казахская литература</option>
+    <option>Русская литература</option>
+    <option>Английский язык</option>
+    <option>История Казахстана</option>
+    <option>Всемирная история</option>
+    <option>География</option>
+    <option>Биология</option>
+    <option>Химия</option>
+    <option>Физика</option>
+    <option>Информатика</option>
+    <option>Естествознание</option>
+    <option>Право</option>
+    <option>Экономика</option>
+    <option>Музыка</option>
+    <option>Изобразительное искусство</option>
+    <option>Физическая культура</option>
+    <option>Другое</option>
+</select>
+
+<br><br>
+
+<label for="year">Год:</label>
+<select id="year">
+    <option>Все годы</option>
+    <option>2026</option>
+    <option>2025</option>
+    <option>2024</option>
+    <option>2023</option>
+    <option>2022</option>
+    <option>2021</option>
+    <option>2020</option>
+    <option>2019</option>
+    <option>2018</option>
+</select>
+
+<br><br>
+
+<label for="achievement">Тип достижения:</label>
+<select id="achievement">
+    <option>Все достижения</option>
+    <option>Грамота</option>
+    <option>Диплом</option>
+    <option>Сертификат</option>
+    <option>Благодарственное письмо</option>
+    <option>Свидетельство</option>
+    <option>Другое</option>
+</select>
+
+        <section>
+    <h3>Результаты поиска</h3>
+
+    <div id="certificates-list">
+        <p>Здесь будут отображаться найденные грамоты.</p>
+    </div>
+</section>
+
+    <p><a href="#" id="logout-button">Выйти из аккаунта</a></p>
+    </main>
+
+    <footer>
+        <p>© 2026 Школьный архив</p>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/supabase.js"></script>
+<script src="js/student-auth.js"></script>
+<script src="js/certificates.js"></script>
+<script src="js/search.js"></script>
+</body>
+</html>
